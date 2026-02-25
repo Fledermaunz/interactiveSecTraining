@@ -11,3 +11,6 @@ You can look up the WHOIS records of any registered domain name using one of the
 telnet to connect
 
 File Transfer Protocol (FTP) is designed to transfer files. As a result, FTP is very efficient for file transfer, and when all conditions are equal, it can achieve higher speeds than HTTP.
+
+Simple Mail Transfer Protocol (SMTP) defines how a mail client talks with a mail server and how a mail server talks with another.
+
