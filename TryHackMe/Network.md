@@ -14,3 +14,4 @@ File Transfer Protocol (FTP) is designed to transfer files. As a result, FTP is 
 
 Simple Mail Transfer Protocol (SMTP) defines how a mail client talks with a mail server and how a mail server talks with another.
 
+The Post Office Protocol version 3 (POP3) is designed to allow the client to communicate with a mail server and retrieve email messages. Port 110
