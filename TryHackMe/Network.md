@@ -6,3 +6,6 @@
 
 
 You can look up the WHOIS records of any registered domain name using one of the online services or via the command-line tool whois, available on Linux systems, among others. As expected, a WHOIS record provides information about the entity that registered a domain name, including name, phone number, email, and address. In the screenshot shown below, you can see when the record was first created and when it was last updated. Moreover, you can find the registrant’s name, address, phone, and email.
+
+
+telnet to connect
