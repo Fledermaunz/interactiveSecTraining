@@ -19,3 +19,6 @@ Essenzielle Ports sind
     3306 - MySQL: Datenbankzugriff.
     3389 - RDP (Remote Desktop Protocol): Windows Remotedesktop.
     8080 - HTTP-Alt: Häufig für Proxy-Server oder Web-Caching
+
+
+FTP username without acc = anonymous (download file = get)
