@@ -1,9 +1,16 @@
 1)  
 start
 
-2) Overview
-Which component on a computer is responsible for hosting and delivering content for web applications? -web server
-Which tool is used to access and interact with web applications? -web browser
-Which component acts as a protective layer, filtering incoming traffic to block malicious attacks, and ensuring the security of the the web application? -web application firewall
+2) Overview  
+Which component on a computer is responsible for hosting and delivering content for web applications? -web server  
+Which tool is used to access and interact with web applications? -web browser  
+Which component acts as a protective layer, filtering incoming traffic to block malicious attacks, and ensuring the security of the the web application? -web application firewall  
 
-3)
+3) Uniform Resource Locator  
+Which protocol provides encrypted communication to ensure secure data transmission between a web browser and a web server? -https  
+What term describes the practice of registering domain names that are misspelt variations of popular websites to exploit user errors and potentially engage in fraudulent activities? -typosquatting  
+What part of a URL is used to pass additional information, such as search terms or form inputs, to the web server? -query string  
+
+4) Http Messages  
+Which HTTP message is returned by the web server after processing a client's request? -http response
+What follows the headers in an HTTP message? -empty line
