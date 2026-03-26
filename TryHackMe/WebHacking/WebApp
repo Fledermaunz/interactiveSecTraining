@@ -1,46 +1,4 @@
-1)  
-start
 
-2) Overview  
-Which component on a computer is responsible for hosting and delivering content for web applications? -web server  
-Which tool is used to access and interact with web applications? -web browser  
-Which component acts as a protective layer, filtering incoming traffic to block malicious attacks, and ensuring the security of the the web application? -web application firewall  
-
-3) Uniform Resource Locator  
-Which protocol provides encrypted communication to ensure secure data transmission between a web browser and a web server? -https  
-What term describes the practice of registering domain names that are misspelt variations of popular websites to exploit user errors and potentially engage in fraudulent activities? -typosquatting  
-What part of a URL is used to pass additional information, such as search terms or form inputs, to the web server? -query string  
-
-4) Http Messages  
-Which HTTP message is returned by the web server after processing a client's request? -http response  
-What follows the headers in an HTTP message? -empty line  
-
-5) Http Request: Request Line and Methods
-GET
-Used to fetch data from the server without making any changes. Reminder! Make sure you’re only exposing data the user is allowed to see. Avoid putting sensitive info like tokens or passwords in GET requests since they can show up as plaintext.
-POST
-Sends data to the server, usually to create or update something. Reminder! Always validate and clean the input to avoid attacks like SQL injection or XSS.
-PUT
-Replaces or updates something on the server. Reminder! Make sure the user is authorised to make changes before accepting the request.
-DELETE
-Removes something from the server. Reminder! Just like with PUT, make sure only authorised users can delete resources.
-Besides these common methods, there are a few others used in specific cases:
-PATCH
-Updates part of a resource. It’s useful for making small changes without replacing the whole thing, but always validate the data to avoid inconsistencies.
-HEAD
-Works like GET but only retrieves headers, not the full content. It’s handy for checking metadata without downloading the full response.
-OPTIONS
-Tells you what methods are available for a specific resource, helping clients understand what they can do with the server.
-TRACE
-Similar to OPTIONS, it shows which methods are allowed, often for debugging. Many servers disable it for security reasons.
-CONNECT
-Used to create a secure connection, like for HTTPS. It’s not as common but is critical for encrypted communication.
-
-Which HTTP protocol version became widely adopted and remains the most commonly used version for web communication, known for introducing features like persistent connections and chunked transfer encoding?
--http/1.1  
-Which HTTP request method describes the communication options for the target resource, allowing clients to determine which HTTP methods are supported by the web server? -OPTIONS  
-In an HTTP request, which component specifies the specific resource or endpoint on the web server that the client is requesting, typically appearing after the domain name in the URL? 
--URL Path  
 1)  
 start
 
@@ -99,60 +57,6 @@ Which category of HTTP response codes indicates that the web server encountered 
 Which HTTP status code indicates that the requested resource could not be found on the web server? -404  1)  
 start
 
-2) Overview  
-Which component on a computer is responsible for hosting and delivering content for web applications? -web server  
-Which tool is used to access and interact with web applications? -web browser  
-Which component acts as a protective layer, filtering incoming traffic to block malicious attacks, and ensuring the security of the the web application? -web application firewall  
-
-3) Uniform Resource Locator  
-Which protocol provides encrypted communication to ensure secure data transmission between a web browser and a web server? -https  
-What term describes the practice of registering domain names that are misspelt variations of popular websites to exploit user errors and potentially engage in fraudulent activities? -typosquatting  
-What part of a URL is used to pass additional information, such as search terms or form inputs, to the web server? -query string  
-
-4) Http Messages  
-Which HTTP message is returned by the web server after processing a client's request? -http response  
-What follows the headers in an HTTP message? -empty line  
-
-5) Http Request: Request Line and Methods
-GET
-Used to fetch data from the server without making any changes. Reminder! Make sure you’re only exposing data the user is allowed to see. Avoid putting sensitive info like tokens or passwords in GET requests since they can show up as plaintext.
-POST
-Sends data to the server, usually to create or update something. Reminder! Always validate and clean the input to avoid attacks like SQL injection or XSS.
-PUT
-Replaces or updates something on the server. Reminder! Make sure the user is authorised to make changes before accepting the request.
-DELETE
-Removes something from the server. Reminder! Just like with PUT, make sure only authorised users can delete resources.
-Besides these common methods, there are a few others used in specific cases:
-PATCH
-Updates part of a resource. It’s useful for making small changes without replacing the whole thing, but always validate the data to avoid inconsistencies.
-HEAD
-Works like GET but only retrieves headers, not the full content. It’s handy for checking metadata without downloading the full response.
-OPTIONS
-Tells you what methods are available for a specific resource, helping clients understand what they can do with the server.
-TRACE
-Similar to OPTIONS, it shows which methods are allowed, often for debugging. Many servers disable it for security reasons.
-CONNECT
-Used to create a secure connection, like for HTTPS. It’s not as common but is critical for encrypted communication.
-
-Which HTTP protocol version became widely adopted and remains the most commonly used version for web communication, known for introducing features like persistent connections and chunked transfer encoding?
--http/1.1  
-Which HTTP request method describes the communication options for the target resource, allowing clients to determine which HTTP methods are supported by the web server? -OPTIONS  
-In an HTTP request, which component specifies the specific resource or endpoint on the web server that the client is requesting, typically appearing after the domain name in the URL? 
--URL Path  
-
-6) Http Request: Headers and Body  
-Request Headers: Host, User-Agent, Referer, Cookie, Content-Type  
-Request Bodies: x-www-form-urlencoded, form-data, json, xml  
-Which HTTP request header specifies the domain name of the web server to which the request is being sent? -Host  
-What is the default content type for form submissions in an HTTP request where the data is encoded as key=value pairs in a query string format? -application/x-www-form-urlencoded  
-Which part of an HTTP request contains additional information like host, user agent, and content type, guiding how the web server should process the request? -Request Headers  
-
-7) Http Response: Status Line and Status Codes  
-Status Codes: Informational 1XX, Successful 2XX, Redirection Messages 3XX, Client Error 4XX, Server Error 5XX  
-What part of an HTTP response provides the HTTP version, status code, and a brief explanation of the response's outcome? -status line  
-Which category of HTTP response codes indicates that the web server encountered an internal issue or is unable to fulfil the client's request? -server error responses  
-Which HTTP status code indicates that the requested resource could not be found on the web server? -404  
-
 8) Http Response: Headers and Body  
 Which HTTP response header can reveal information about the web server's software and version, potentially exposing it to security risks if not removed? -Server  
 Which flag should be added to cookies in the Set-Cookie HTTP response header to ensure they are only transmitted over HTTPS, protecting them from being exposed during unencrypted transmissions? -secure  
@@ -167,18 +71,3 @@ Which HTTP request header specifies the domain name of the web server to which t
 What is the default content type for form submissions in an HTTP request where the data is encoded as key=value pairs in a query string format? -application/x-www-form-urlencoded  
 Which part of an HTTP request contains additional information like host, user agent, and content type, guiding how the web server should process the request? -Request Headers  
 
-7) Http Response: Status Line and Status Codes  
-Status Codes: Informational 1XX, Successful 2XX, Redirection Messages 3XX, Client Error 4XX, Server Error 5XX  
-What part of an HTTP response provides the HTTP version, status code, and a brief explanation of the response's outcome? -status line  
-Which category of HTTP response codes indicates that the web server encountered an internal issue or is unable to fulfil the client's request? -server error responses  
-Which HTTP status code indicates that the requested resource could not be found on the web server? -404  
-
-8) Http Response: Headers and Body  
-Which HTTP response header can reveal information about the web server's software and version, potentially exposing it to security risks if not removed? -Server  
-Which flag should be added to cookies in the Set-Cookie HTTP response header to ensure they are only transmitted over HTTPS, protecting them from being exposed during unencrypted transmissions? -secure  
-Which flag should be added to cookies in the Set-Cookie HTTP response header to prevent them from being accessed via JavaScript, thereby enhancing security against XSS attacks? -HttpOnly  
-
-9) Security Headers  
-In a Content Security Policy (CSP) configuration, which property can be set to define where scripts can be loaded from?  
-When configuring the Strict-Transport-Security (HSTS) header to ensure that all subdomains of a site also use HTTPS, which directive should be included to apply the security policy to both the main domain and its subdomains?  
-Which HTTP header directive is used to prevent browsers from interpreting files as a different MIME type than what is specified by the server, thereby mitigating content type sniffing attacks?  
