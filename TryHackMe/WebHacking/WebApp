@@ -43,6 +43,14 @@ In an HTTP request, which component specifies the specific resource or endpoint 
 -URL Path  
 
 6) Http Request: Headers and Body  
-Which HTTP request header specifies the domain name of the web server to which the request is being sent?  
-What is the default content type for form submissions in an HTTP request where the data is encoded as key=value pairs in a query string format?  
-Which part of an HTTP request contains additional information like host, user agent, and content type, guiding how the web server should process the request?  
+Request Headers: Host, User-Agent, Referer, Cookie, Content-Type  
+Request Bodies: x-www-form-urlencoded, form-data, json, xml  
+Which HTTP request header specifies the domain name of the web server to which the request is being sent? -Host  
+What is the default content type for form submissions in an HTTP request where the data is encoded as key=value pairs in a query string format? -application/x-www-form-urlencoded  
+Which part of an HTTP request contains additional information like host, user agent, and content type, guiding how the web server should process the request? -Request Headers  
+
+7) Http Response: Status Line and Status Codes  
+Status Codes: Informational 1XX, Successful 2XX, Redirection Messages 3XX, Client Error 4XX, Server Error 5XX  
+What part of an HTTP response provides the HTTP version, status code, and a brief explanation of the response's outcome? -status line  
+Which category of HTTP response codes indicates that the web server encountered an internal issue or is unable to fulfil the client's request? -server error responses  
+Which HTTP status code indicates that the requested resource could not be found on the web server? -404  
