@@ -63,9 +63,15 @@ Which flag should be added to cookies in the Set-Cookie HTTP response header to 
 Which flag should be added to cookies in the Set-Cookie HTTP response header to prevent them from being accessed via JavaScript, thereby enhancing security against XSS attacks? -HttpOnly  
 
 9) Security Headers  
-In a Content Security Policy (CSP) configuration, which property can be set to define where scripts can be loaded from?  
-When configuring the Strict-Transport-Security (HSTS) header to ensure that all subdomains of a site also use HTTPS, which directive should be included to apply the security policy to both the main domain and its subdomains?  
+Content-Security-Policy (CSP): Content-Security-Policy: default-src 'self'; script-src 'self' https://cdn.tryhackme.com; style-src 'self'  
+Strict-Transport-Security (HSTS): max-age, includeSubDomains, preload  
+X-Content-Type-Options: nosniff  
+Referrer-Policy: no-referrer, same-origin, strict-origin, strict-origin-when-cross-origin   
+In a Content Security Policy (CSP) configuration, which property can be set to define where scripts can be loaded from? -script-src  
+When configuring the Strict-Transport-Security (HSTS) header to ensure that all subdomains of a site also use HTTPS, which directive should be included to apply the security policy to both the main domain and its subdomains?   
 Which HTTP header directive is used to prevent browsers from interpreting files as a different MIME type than what is specified by the server, thereby mitigating content type sniffing attacks?  
+
+
 Request Bodies: x-www-form-urlencoded, form-data, json, xml  
 Which HTTP request header specifies the domain name of the web server to which the request is being sent? -Host  
 What is the default content type for form submissions in an HTTP request where the data is encoded as key=value pairs in a query string format? -application/x-www-form-urlencoded  
