@@ -71,9 +71,7 @@ In a Content Security Policy (CSP) configuration, which property can be set to d
 When configuring the Strict-Transport-Security (HSTS) header to ensure that all subdomains of a site also use HTTPS, which directive should be included to apply the security policy to both the main domain and its subdomains?   
 Which HTTP header directive is used to prevent browsers from interpreting files as a different MIME type than what is specified by the server, thereby mitigating content type sniffing attacks?  
 
-
-Request Bodies: x-www-form-urlencoded, form-data, json, xml  
-Which HTTP request header specifies the domain name of the web server to which the request is being sent? -Host  
-What is the default content type for form submissions in an HTTP request where the data is encoded as key=value pairs in a query string format? -application/x-www-form-urlencoded  
-Which part of an HTTP request contains additional information like host, user agent, and content type, guiding how the web server should process the request? -Request Headers  
-
+10) Practical Task: Making HTTP Requests  
+GET to /api/users -THM{YOU_HAVE_JUST_FOUND_THE_USER_LIST}  
+POST to /api/user/2 and values name=Bob&&country=US -THM{YOU_HAVE_MODIFIED_THE_USER_DATA}  
+DELETE to /api/user/1 -THM{YOU_HAVE_JUST_DELETED_A_USER}
