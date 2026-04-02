@@ -27,10 +27,16 @@ SELECT * FROM hacking_tools ORDER BY name DESC; -Wi-Fi Pineapple
 
  7) Operators
 Using the tools_db database, which tool falls under the Multi-tool category and is useful for pentesters and geeks?
-SELECT * **(VM expired lol)** -Flipper Zero
-Using the tools_db database, what is the category of tools with an amount greater than or equal to 300? -RFID cloning
-Using the tools_db database, what is the category of tools with an amount greater than or equal to 300? -Lan Turtle
+SELECT * FROM hacking_tools WHERE category = “Multi-tool” AND description LIKE “%geeks%”; -Flipper Zero
+Using the tools_db database, what is the category of tools with an amount greater than or equal to 300?
+SELECT * FROM hacking_tools WHERE amount >= "300"; -RFID cloning
+Using the tools_db database, which tool falls under the Network intelligence category with an amount less than 100?
+SELECT * FROM hacking_tools WHERE category >= "Network intelligence" AND amount < "100"; -Lan Turtle
 
 8) Functions
-Using the tools_db database, what is the total sum of all tools? -USB Rubber Ducky
-Using the tools_db database, what is the total sum of all tools? -
+Using the tools_db database, what is the tool with the longest name based on character length?
+SELECT name, LENGTH(name) AS name_length FROM hacking_tools ORDER BY name_length DESC; -USB Rubber Ducky
+Using the tools_db database, what is the total sum of all tools?
+SELECT SUM(amount) AS total FROM hacking_tools; -144
+Using the tools_db database, what are the tool names where the amount does not end in 0, and group the tool names concatenated by " & ".
+SELECT name, GROUP_CONCT(amount SEPARATOR "&") AS group FROM hacking_tools WHERE amount % 10 != 0 GROUP BY name; -Flipper Zero&iCopy-XS
